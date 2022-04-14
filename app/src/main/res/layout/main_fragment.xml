@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rLayout_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_main_popular_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POPULAR MUSIC"
+                android:textSize="22dp"
+                android:fitsSystemWindows="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_share_24" />
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_popular_music"
+            android:fitsSystemWindows="true"
+            app:layout_constraintTop_toBottomOf="@id/rLayout_popular"
+            android:layout_margin="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/rLayout_popular"
+            app:layout_constraintRight_toRightOf="@id/rLayout_popular"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rLayout_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/rv_popular_music"
+            app:layout_constraintRight_toRightOf="@id/rv_popular_music"
+            app:layout_constraintTop_toBottomOf="@id/rv_popular_music">
+
+            <TextView
+                android:id="@+id/tv_main_playlist_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PLAYLIST MUSIC"
+                android:textSize="22dp"
+                android:fitsSystemWindows="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_share_24" />
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/rLayout_playlist"
+            app:layout_constraintStart_toStartOf="@+id/rLayout_playlist"
+            app:layout_constraintTop_toBottomOf="@+id/rLayout_playlist" />
+
+        <RelativeLayout
+            android:id="@+id/rLayout_greatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/rv_main_playlist"
+            app:layout_constraintRight_toRightOf="@id/rv_main_playlist"
+            app:layout_constraintTop_toBottomOf="@id/rv_main_playlist">
+
+            <TextView
+                android:id="@+id/tv_main_greatest_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POPULAR MUSIC"
+                android:textSize="22dp"
+                android:fitsSystemWindows="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_share_24" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_greatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/rLayout_greatest"
+            app:layout_constraintStart_toStartOf="@+id/rLayout_greatest"
+            app:layout_constraintTop_toBottomOf="@+id/rLayout_greatest" />
+
+        <RelativeLayout
+            android:id="@+id/rLayout_weekend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/rv_main_greatest"
+            app:layout_constraintRight_toRightOf="@id/rv_main_greatest"
+            app:layout_constraintTop_toBottomOf="@id/rv_main_greatest">
+
+            <TextView
+                android:id="@+id/tv_main_weekend_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekend MUSIC"
+                android:textSize="22dp"
+                android:fitsSystemWindows="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"/>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_weekend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/rLayout_weekend"
+            app:layout_constraintStart_toStartOf="@+id/rLayout_weekend"
+            app:layout_constraintTop_toBottomOf="@+id/rLayout_weekend" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:showIn= "navigation_view" >
+    <group android:checkableBehavior= "single" >
+        <item
+            android:id= "@+id/nav_music"
+            android:icon= "@drawable/ic_baseline_music_note_24"
+            android:title= "Music" />
+        <item
+            android:id= "@+id/nav_playList"
+            android:icon= "@drawable/ic_baseline_queue_music_24"
+            android:title= "PlayList" />
+        <item
+            android:id= "@+id/nav_library"
+            android:icon= "@drawable/ic_baseline_library_music_24"
+            android:title= "Library" />
+        <item
+            android:id= "@+id/nav_latest"
+            android:icon= "@drawable/ic_baseline_music_video_24"
+            android:title= "Latest"/>
+    </group>
+    <item android:title= "Communicate" >
+        <menu>
+            <item
+                android:id= "@+id/nav_share"
+                android:icon= "@drawable/ic_baseline_share_24"
+                android:title= "Share" />
+            <item
+                android:id= "@+id/nav_send"
+                android:icon= "@drawable/ic_baseline_send_24"
+                android:title= "Send" />
+        </menu>
+    </item>
+</menu>
