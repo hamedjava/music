@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "974787338444",
+    "project_id": "android-tutorials-online-chat",
+    "storage_bucket": "android-tutorials-online-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974787338444:android:df9f48ab70cc248aa0a269",
+        "android_client_info": {
+          "package_name": "com.example.tutorialsandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974787338444-bia7nh1n011dfqsqblel1iclropp2n22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-ruTleFDtKshZS_49b_-qeOaWcbUmFbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974787338444-bia7nh1n011dfqsqblel1iclropp2n22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
